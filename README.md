@@ -6,6 +6,7 @@ Home test for Mobile Automation position in Applicaster
 
 Appium client (project was done under Mac OS system)
 In order to install the Appium tool that I used run these commands:
+
     brew install node      # get node.js
 
     npm install -g appium  # get appium
@@ -13,7 +14,7 @@ In order to install the Appium tool that I used run these commands:
     npm install wd         # get appium client
 
     appium                 # start appium, this service will keep running unless you killing the process with ctrl+c
-    
+
 
 ## Running the tests
 
