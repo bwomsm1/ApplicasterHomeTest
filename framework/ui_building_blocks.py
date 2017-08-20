@@ -9,9 +9,8 @@ class UiBuildingBlocks(object):
         tapBarButton.click()
 
     def verify_home_screen(self):
-        for element_name in ["The Greatest Application...", "eWhere"]:
-            pass
-            #self.verify_element_on_screen_by_name(element_name)
+        for element_name in ["The Greatest Application Ever", "eWhere"]:
+            self.verify_element_on_screen_by_name(element_name)
         print "Home screen verified successfully"
 
     def verify_events_screen(self):
@@ -22,9 +21,6 @@ class UiBuildingBlocks(object):
     def verify_discover_screen(self):
         for element_name in ["Profile Settings", "Invite Friends", "About Us"]:
             self.verify_element_on_screen_by_name(element_name)
-
-
-
         print "Discover screen verified successfully"
 
     def verify_inbox_screen(self):

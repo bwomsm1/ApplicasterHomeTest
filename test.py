@@ -11,7 +11,6 @@ class eWhereAppTests(BaseTest):
         self.ui_building_blocks.verify_events_screen()
 
         self.ui_building_blocks.navigate_to_screen_by_name("Discover")
-        e = self.agent.find_element_by_class_name("UIImageView")
         self.ui_building_blocks.verify_discover_screen()
 
         self.ui_building_blocks.navigate_to_screen_by_name("Inbox")

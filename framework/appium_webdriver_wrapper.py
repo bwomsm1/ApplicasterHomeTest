@@ -14,7 +14,7 @@ class AppiumWebDriverWrapper(object):
             PLATFORM_VERSION: '10.3',
             DEVICE_NAME: 'iPhone 6',
             SHOW_IOS_LOGS: 'true',
-            APP_PATH: self.configuration.app_path,
+            BUNDLE_ID: "SMWarren.e-Where",
             DEVICE_ORIENTATION: "portrait",
             BROWSER_NAME: ""
         }
