@@ -1,10 +1,5 @@
-## Applicaster Home Test
+# Applicaster Home Test
 Home test for Mobile Automation position in Applicaster
-
-## Candidate personal details
-Name: Boaz Warshawsky<br />
-Phone: 054-566-4876<br />
-LinkedIn: https://www.linkedin.com/in/boaz-warshawsky/
 
 ## Prerequisites
 * Test should be running under Mac OS (requesting this since I haven't tested it under Windows only)
@@ -18,10 +13,15 @@ LinkedIn: https://www.linkedin.com/in/boaz-warshawsky/
     * cd ApplicasterHomeTest/ <br >
     * python test.py
 
-
 ## How to install Appium v1.6.6-beta4
     1. brew install node           # get node.js
     2. npm install -g appium@beta  # get appium
     3. npm install wd              # get appium client
+    
+## Candidate personal details
+Name: Boaz Warshawsky<br />
+Phone: 054-566-4876<br />
+LinkedIn: https://www.linkedin.com/in/boaz-warshawsky/
+
 
 
