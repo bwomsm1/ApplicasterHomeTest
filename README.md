@@ -14,8 +14,10 @@ Home test for Mobile Automation position in Applicaster
 
 ## Running the tests
 
-cd ApplicasterHomeTest/
-python test.py
+* Install our application on "iPhone 6 Simulator" via xCode (remember keeping SMWarren.e-Where as our bundle id) <br >
+* From terminal enter the following:
+    * cd ApplicasterHomeTest/ <br >
+    * python test.py
 
 
 ### How to install Appium v1.6.6-beta4
