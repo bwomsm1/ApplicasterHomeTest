@@ -3,8 +3,8 @@ Home test for Mobile Automation position in Applicaster
 
 ## Candidate personal details
 Name: Boaz Warshawsky<br />
-Phone: 054-566-4876
-Linked: https://www.linkedin.com/in/boaz-warshawsky/
+Phone: 054-566-4876<br />
+LinkedIn: https://www.linkedin.com/in/boaz-warshawsky/
 
 ## Prerequisites
 * Test should be running under Mac OS (requesting this since I haven't tested it under Windows only)
