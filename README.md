@@ -4,17 +4,10 @@ Home test for Mobile Automation position in Applicaster
 
 ### Prerequisites
 
-Appium client (project was done under Mac OS system)
-In order to install the Appium tool that I used run these commands:
+Appium client (project was done under Mac OS system)<br />
+If appium is not installed follow these instructions in order to install Appium version 1.6.6Beta: http://appium.io/
 
-    brew install node      # get node.js
-
-    npm install -g appium  # get appium
-
-    npm install wd         # get appium client
-
-    appium                 # start appium, this service will keep running unless you killing the process with ctrl+c
-
+The tests assuming that SMWarren.e-Where application is already installed on your Simulator.
 
 ## Running the tests
 
