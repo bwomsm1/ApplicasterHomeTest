@@ -40,6 +40,18 @@ class eWhereAppTestStress(BaseTest):
         return "This test perform stress test for by launching the application 5 times in a row"
 
 
+class eWhereAppTestsBackgorundToForground(BaseTest):
+
+    def test_background_to_forground(self):
+        self.ui_building_blocks.navigate_to_screen_by_name("Discover")
+        self.ui_building_blocks.verify_discover_screen()
+        self.agent.background_app(3)
+        self.ui_building_blocks.verify_discover_screen()
+
+    def shortDescription(self):
+        return "This test verifies that application returns to same state (=screen) after returning from background"
+
+
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(eWhereAppTestNavigation)
     unittest.TextTestRunner().run(suite)

@@ -11,15 +11,14 @@ class AppiumWebDriverWrapper(object):
     def setup(self):
         desired_caps = {
             PLATFORM_NAME: 'iOS',
-            PLATFORM_VERSION: '10.3',
-            DEVICE_NAME: 'iPhone 6',
+            PLATFORM_VERSION: self.configuration.platform_version,
+            DEVICE_NAME: self.configuration.device_name,
             SHOW_IOS_LOGS: 'true',
-            BUNDLE_ID: "SMWarren.e-Where",
+            BUNDLE_ID: self.configuration.bundle_id,
             DEVICE_ORIENTATION: "portrait",
-            BROWSER_NAME: ""
         }
 
-        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+        self.driver = webdriver.Remote('http://'+self.configuration.appium_server_host+'/wd/hub', desired_caps)
 
     def close(self):
         self.driver.quit()
