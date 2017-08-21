@@ -1,11 +1,13 @@
 
 class UiBuildingBlocks(object):
-    def __init__(self, agent):
-        self.agent = agent
+    def __init__(self, base_test):
+        self.base_test = base_test
 
     def navigate_to_screen_by_name(self, screen_name):
-        tapBarButton = self.agent.find_element_by_name(screen_name)
-        assert tapBarButton
+        try:
+            tapBarButton = self.base_test.agent.find_element_by_name(screen_name)
+        except:
+            self.base_test.fail("failed to find '" + screen_name + "' button on screen")
         tapBarButton.click()
 
     def verify_home_screen(self):
@@ -32,7 +34,11 @@ class UiBuildingBlocks(object):
         print "Settings screen verified successfully"
 
     def verify_element_on_screen_by_name(self, element_name):
-        element = self.agent.find_element_by_name(element_name)
-        assert element
+        try:
+            self.base_test.agent.find_element_by_name(element_name)
+        except:
+            self.base_test.fail("failed to find " + element_name + " on screen")
+
+
 
 

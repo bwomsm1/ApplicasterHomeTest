@@ -18,13 +18,13 @@ class BaseTest(unittest.TestCase):
     def setUp(self):
         super(BaseTest, self).setUp()
         self.setupWebDriver()
-        self.ui_building_blocks = UiBuildingBlocks(self.agent)
+        self.ui_building_blocks = UiBuildingBlocks(self)
 
     def tearDown(self):
         super(BaseTest, self).tearDown()
 
         self.appiumWrapper.close()
-        print self.id(), "finished running successfully!"
+        print self.id(), "finished running."
         print self.shortDescription()
 
     def setupWebDriver(self):

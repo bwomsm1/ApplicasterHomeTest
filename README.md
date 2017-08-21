@@ -9,6 +9,7 @@ Home test for Mobile Automation position in Applicaster
 
 ## Running the tests
 * Install our application on "iPhone 6 Simulator" via xCode (remember keeping SMWarren.e-Where as our bundle id) <br />
+    (you can choose other simulator such as iPhone 7, just update this in configuration.json file under device_name field, by default its iPhone 6)
 * From terminal enter the following:
     * cd ApplicasterHomeTest/ <br >
     * python test.py
