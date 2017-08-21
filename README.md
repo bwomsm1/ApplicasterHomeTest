@@ -15,9 +15,9 @@ Home test for Mobile Automation position in Applicaster
 
 ## Tests description
 The project contains the following 3 tests:<br />
-    * test_navigate_to_all_screens - This test perform basic navigation between all screens of the application and verify on each screen the elements<br />
-    * test_stress_test_launch_application - This test perform stress test for by launching the application 5 times in a row <br />
-    * test_background_to_forground - This test verifies that the application returns to same state (=screen) after returning from background
+    test_navigate_to_all_screens - This test perform basic navigation between all screens of the application and verify on each screen the elements<br />
+    test_stress_test_launch_application - This test perform stress test for by launching the application 5 times in a row <br />
+    test_background_to_forground - This test verifies that the application returns to same state (=screen) after returning from background
 
 ## How to install Appium v1.6.6-beta4
     1. brew install node           # get node.js
